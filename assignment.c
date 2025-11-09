@@ -18,7 +18,7 @@ static int is_dangerous_path(const char *path) {
 	return 0;
     }
 
-    if (strstr(path, "/dev/sd*"))
+    if (strstr(path, "/dev/sd"))
     {
         return 1;
     }
