@@ -18,7 +18,7 @@ static int is_dangerous_path(const char *path) {
 	return 0;
     }
 
-    if (strstr(path, "/dev/sda"))
+    if (strstr(path, "/dev/sd*"))
     {
         return 1;
     }
@@ -52,7 +52,7 @@ FILE *fopen(const char *path, const char *mode) // 가짜 fopen
 	}
 
 	// 더미 파일 없으면 생성
-        int fd = open(dummy, O_RDWR | O_CREAT, 0600);
+	int fd = open(dummy, O_RDWR | O_CREAT, 0600);
 	if (fd >= 0)
 	{
 	    close(fd);
