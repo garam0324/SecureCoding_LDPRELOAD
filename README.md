@@ -20,4 +20,4 @@
 gcc -shared -fPIC -O2 -pthread -o assignment.so assignment.c -ldl
 
 # 실행
-sudo LD_PRELoAD=$PWD/assignment.so ./hw1.elf
+sudo LD_PRELOAD=$PWD/assignment.so ./hw1.elf
