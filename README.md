@@ -20,4 +20,4 @@
 gcc -shared -fPIC -O2 -pthread -o sc_hw1.so sc_hw1.c -ldl
 
 # 실행
-sudo LD_PRELOAD=$PWD/sc_hw1.so ./sc_hw1.elf
+sudo LD_PRELOAD=$PWD/sc_hw1.so ./hw1.elf
